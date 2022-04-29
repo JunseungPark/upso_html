@@ -1,0 +1,197 @@
+/* 로그인 */
+.form_content {
+  width: 650px;
+  height: 340px;
+  margin: 100px auto;
+  border-radius: 8px;
+  font-weight: bold;
+  box-shadow: 5px 5px 5px 5px #e9e9e9;
+}
+
+.form_title {
+  background-color: #84c5f1;
+  padding: 17px;
+  border-radius: 8px;
+  color: white;
+  padding-left: 25px;
+}
+
+.form_title span {
+  font-size: 13px;
+  margin-left: 10px;
+}
+
+.form_input {
+  text-align: center;
+  font-size: 14px;
+  color: #555;
+  border-bottom: 2px solid #84c5f1;
+  padding: 20px;
+  padding-bottom: 30px;
+  margin-bottom: 20px;
+}
+
+.form_input .input_wrap{
+width: 75%;
+margin: 0 auto;
+display: flex;
+line-height: 30px;
+margin-bottom: 20px;
+}
+.form_input .input_wrap .text{
+  flex-basis: 17%;
+  text-align: left;
+  margin-left: 10px;
+}
+
+.form_input .input_wrap .text.password{
+  flex-basis: 24%;
+}
+
+.form_input input {
+}
+
+.form_input p span {
+  color: #84c5f1;
+}
+
+.form_input span {
+  color: #45b0f8;
+  font-weight: normal;
+  font-size: 12.5px;
+}
+
+.form_input input {
+  width: 300px;
+}
+
+.extra_wrap {
+width: 100%;
+display: flex;
+justify-content: center;
+font-weight: 500;
+font-size: 10px;
+gap: 10px;
+color: #84c5f1;
+}
+.extra_wrap div:nth-child(1){
+position: relative;
+}
+.extra_wrap div:nth-child(1)::after {
+content: '';
+position: absolute;
+width: 2px;
+height: 10px;
+top: 2px;
+right: -6px;
+background-color: #84c5f1;
+}
+
+/* 로그인 */
+
+
+/* 비밀번호 찾기 css */
+
+.password_content {
+  width: 650px;
+  height: 340px;
+  margin: 100px auto;
+  border-radius: 8px;
+  font-weight: bold;
+  box-shadow: 5px 5px 5px 5px #e9e9e9;
+}
+
+.password_title {
+  background-color: #84c5f1;
+  padding: 17px;
+  border-radius: 8px;
+  color: white;
+  padding-left: 25px;
+}
+
+.password_title span {
+  font-size: 13px;
+  margin-left: 10px;
+}
+
+.password_input {
+  text-align: center;
+  font-size: 14px;
+  color: #555;
+  border-bottom: 2px solid #84c5f1;
+  padding: 20px;
+  padding-bottom: 30px;
+}
+
+.password_input input {
+  margin-left: 15px;
+}
+
+.password_input p span {
+  color: #84c5f1;
+}
+
+.password_input span {
+  color: #45b0f8;
+  font-weight: normal;
+  font-size: 12.5px;
+}
+
+.password_input input {
+  width: 300px;
+}
+
+
+/* 비밀번호 변경 */
+
+.password_content {
+  width: 650px;
+  height: 340px;
+  margin: 200px auto;
+  border-radius: 8px;
+  font-weight: bold;
+  box-shadow: 5px 5px 5px 5px #e9e9e9;
+  margin-top: 40px;
+}
+
+.password_title {
+  background-color: #84c5f1;
+  padding: 17px;
+  border-radius: 8px;
+  color: white;
+  padding-left: 25px;
+}
+
+.password_title span {
+  font-size: 13px;
+  margin-left: 10px;
+}
+
+.password_input {
+  text-align: center;
+  font-size: 14px;
+  color: #555;
+  border-bottom: 2px solid #84c5f1;
+  padding: 20px;
+  padding-bottom: 30px;
+}
+
+.password_input input {
+  margin-left: 15px;
+}
+
+.password_input p span {
+  color: #84c5f1;
+}
+
+.password_input span {
+  color: #45b0f8;
+  font-weight: normal;
+  font-size: 12.5px;
+}
+
+.password_input input {
+  width: 300px;
+  position: relative;
+}
+

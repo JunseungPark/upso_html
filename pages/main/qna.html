@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>main</title>
+
+  <link rel="stylesheet" href="../../assets/style/font.css">
+  <link rel="stylesheet" href="../../assets/style/common.css">
+  <link rel="stylesheet" href="../../assets/style/main.css">
+</head>
+<body>
+  <div id="header">
+    <div class="header-container-blue">
+      <div class="header-item">
+        <img src="../../assets/img/logo-image-white.png" />
+        <h1 class="logo">UPSO-생활용품샵</h1>
+      </div>
+
+      <ul class="gnb-horizon">
+        <li>
+          <a>홍길동님</a>
+        </li>
+        <li>
+            <a onclick="location.href = '../user/user_orderList.html'">마이페이지</a>
+        </li>
+        <li>
+            <a onclick="location.href = '../order/basket.html'">장바구니</a>
+        </li>
+        <li>
+            <a onclick="location.href ='../main/main.html'">로그아웃</a>
+        </li>
+      </ul>
+    </div>
+    <div class="header-container">
+      <h1 class="sub-logo">UPSO</h1>
+    </div>
+  </div>
+  <!-- 메인페이지 메뉴바 -->
+  <div id="gnb" class="gnb-fux">
+    <ul class="gnb-nav">
+      <li>
+        <a class="active" href="#">전체상품</a>
+      </li>
+      <li>
+        <a href="#">생활용품</a>
+      </li>
+      <li>
+        <a href="#">주방용품</a>
+      </li>
+      <li>
+        <a href="#">가전용품</a>
+      </li>
+      <li>
+        <a href="#">Q&A</a>
+      </li>
+    </ul>
+  </div>
+  <div class="contents">
+    <div class="content_wrap">
+      <div id="mypage_box">
+        <div id="mypage_main" class="qna_box">
+            <div id="mypage_contents">
+                <div class="qna_contents">
+                    <h1 class="main_qna_title">상품 문의</h1>
+                    <p style="
+                background-color: #84c5f1;
+                height: 10px;
+                border-radius: 5px;
+                margin: 20px;
+              "></p>
+                    <div id="qna_title">
+                        <div id="select_box">
+                            <label for="select_title" class="select_title">문의 유형</label>
+                            <select name="qna_select" id="qna_select">
+                              <option value="product_qna">제품 상세문의</option>
+                              <option value="refund_qna">환불문의</option>
+                            </select>
+                            <label for="select_title" class="select_title">상품명</label>
+                            <div class="title_data">바스 논슬립 규조토 발매트</div>
+                        </div>
+                        <p style="
+                  background-color: #84c5f1;
+                  height: 10px;
+                  border-radius: 5px;
+                  margin: 20px;
+                "></p>
+                        <div class="qna_text">
+                            <label for="qna_text" class="qna_text" id="qna_text">문의내용</label
+                  >
+                </div>
+              </div>
+            </div>
+            <textarea id="qna_textarea" name="qna_textarea"> </textarea>
+          </div>
+          <div class="small_button qna_button">
+            <button class="blue_button">등록</button>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 풋터 -->
+  <div id="footer">
+    <div class="footer_wrap">
+      <div class="footer-log">
+        <div class="img_wrap">
+          <img src="../../assets/img/logo-image-blue.png" />
+        </div>
+        <h5>© 2022 All Rights Reserved</h5>
+      </div>
+      <div class="footer-item">
+        <div><h5>Contact</h5></div>
+        <div class="footer-text">
+          <div class="img_wrap">
+            <img class="location_img" src="../../assets/img/icon-location.png" />
+          </div>
+          <span>
+            Wisconsin Ave, Suite 700 <br />
+            Chevy Chase, Maryland 20815
+          </span>
+        </div>
+        <div class="footer-text">
+          <div class="img_wrap">
+          <img class="email_img" src="../../assets/img/icon-email.png" /> 
+          </div>
+          <span>support@figma.com</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+<style>
+body {
+  margin: 0;
+  font-family: 'S-CoreDream';
+}
+
+#mypage_contents .qna_contents{
+  text-align:start;
+  padding-left: 3em;
+  font-size: 20px;
+}
+
+#qna_title .qna_text{
+  font-size: 20px;
+}
+
+#qna_buttons {
+  display: block;
+  float: right;
+  margin-right: 120px;
+  background-color: #84c5f1;
+  color: white;
+  width: 200px;
+  height: 45px;
+  font-weight: bold;
+  font-size: 22px;
+  text-align: center;
+  border-radius: 10px;
+  margin-top:1em;
+}
+
+#qna_select {
+  width: 200px;
+}
+
+.main_qna_title {
+  padding-left: 10px;
+}
+
+label {
+  position: relative;
+  display: flex;
+  color: #303972;
+  font-size: 16px;
+  font-weight: bold;
+  padding-left: 20px;
+  margin-left: 10px;
+  padding-top: 10px;
+  margin-right: 20px;
+}
+
+#select_box {
+  position: relative;
+  display: flex;
+  text-align: center;
+  color: #303972;
+  right: auto;
+  font-size: 14px;
+  font-weight: bold;
+}
+  #select_box .product_title {
+  margin-right: 1em;
+
+}
+
+.title_data {
+  padding-top: 11px;
+  margin-left: 10px;
+  font-size: 15px;
+  color: #777;
+}
+
+select {
+  position: relative;
+  box-sizing: border-box;
+  border-radius: 0.25rem;
+  display: flex;
+  width: 300px;
+  height: 39px;
+  margin-left: 1em;
+  margin-right: 1em;
+  padding-left: 5px;
+}
+
+textarea {
+  margin-left: 80px;
+  margin-top: 20px;
+  width: 90%;
+  min-height: 500px;
+  vertical-align: top;
+  line-height: 1.5;
+  border-radius: 10px;
+  resize: none;
+  font-size: 18px;
+  outline: none;
+  border: 1px solid #999;
+}
+
+#mypage_box .qna_box {
+  height: 900px;
+}
+
+button {
+    font-weight: bold;
+    border-radius: 5px;
+    border: 2px solid #cbcbcb;
+    box-shadow: 3px 3px 3px #cbcbcb;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.common_button,
+.pay_button,
+.shopping_button {
+    padding: 12px 25px;
+    font-size: 17px;
+}
+
+.common_button {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.pay_button {
+    width: 280px;
+}
+
+.shopping_button {
+    width: 300px;
+}
+
+/* 버튼에 hover할 시 변하는 부분 */
+
+.pay_button:hover,
+.shopping_button:hover,
+.blue_button:hover,
+.white_button:hover {
+    border: 2px solid rgb(179, 179, 179);
+}
+
+.blue_button,
+.pay_button {
+    color: white;
+    background-color: #84c5f1;
+}
+
+.shopping_button,
+.white_button {
+    color: #84c5f1;
+    background-color: white;
+}
+
+.blue_button,
+.white_button {
+    width: 120px;
+    padding: 10px 15px;
+    margin: 5px;
+}
+
+.qna_button {
+    text-align: right;
+    margin-top: 20px;
+    margin-right: 55px;
+}
+
+.qna_button .blue_button {
+  width: 200px;
+  height: 45px;
+}
+</style>

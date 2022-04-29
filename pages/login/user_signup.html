@@ -1,0 +1,481 @@
+<link rel="stylesheet" href="/sample.html" />
+
+<html>
+  <!-- 메인페이지 헤더 -->
+
+  <div id="header">
+    <div class="header-container-blue">
+      <div class="header-item">
+        <img src="img/logo-image-white.png" />
+
+        <h1 class="logo">UPSO-생활용품샵</h1>
+      </div>
+
+      <!--메인페이지 탭 바-->
+      <ul class="gnb-horizon">
+        <li>
+          <a>로그인</a>
+        </li>
+        <li>
+          <a>비밀번호 찾기</a>
+        </li>
+        <li>
+          <a>회원가입</a>
+        </li>
+      </ul>
+    </div>
+    <div class="header-container">
+      <h1 class="sub-logo">UPSO</h1>
+    </div>
+  </div>
+
+  <!--회원가입 바-->
+  <div id="body">
+    <div id="mypage_box">
+      <!--회원가입 컨텐츠-->
+      <div id="mypage_main">
+        <div id="mypage_contents">
+          <div class="signup_bar">
+            <h1>회원가입</h1>
+          </div>
+          <form>
+            <div class="id_contents">
+              <label for="signup_id">아이디</label>
+              <input
+                type="text"
+                id="signup_id"
+                class="signup_id"
+                name="signup_id"
+                placeholder="ID"
+              />
+              <button class="btn page-btn btn-blue">중복확인</button>
+            </div>
+
+            <!--alert이벤트 만들기-->
+            <div class="id_alert" style="margin-top: -2rem">
+              중복된 아이디입니다.
+            </div>
+
+            <div class="password_contents">
+              <div>
+                <label for="signup_password">비밀번호</label>
+                <input
+                  type="password"
+                  id="signup_password"
+                  name="signup_password"
+                  placeholder="PASSWORD"
+                />
+              </div>
+              <div class="password_validator">
+                비밀번호가 일치하지 않습니다.
+              </div>
+              <div>
+                <label for="signup_passwordConfirm">비밀번호 확인</label>
+                <input
+                  type="password"
+                  id="signup_password"
+                  name="signup_passwordConfirm"
+                  placeholder="PASSWORD"
+                />
+              </div>
+            </div>
+
+            <div>
+              <label for="signup_phone">연락처</label>
+              <input
+                type="text"
+                id="signup_phone"
+                name="signup_phone"
+                placeholder="010-OOOO-OOOO"
+              />
+            </div>
+            <div class="addr_contents">
+              <label for="signup_addr1">주소</label>
+              <input
+                type="text"
+                id="signup_addr1"
+                class="signup_addr1"
+                name="signup_addr1"
+                placeholder="서울특별시 OO구 OO길"
+              />
+              <div class="addr_details">
+                <label for="signup_addr2">상세주소</label>
+                <input
+                  type="text"
+                  id="signup_addr2"
+                  class="signup_addr2"
+                  name="signup_addr2"
+                  placeholder="OOO빌라/아파트 OOO호"
+                />
+                <input
+                  type="text"
+                  id="signup_addr3"
+                  class="signup_addr3"
+                  name="signup_addr3"
+                  placeholder="우편번호 (생략 가능)"
+                />
+              </div>
+            </div>
+          </form>
+
+          <div class="content-line-blue"></div>
+          <!--회원가입 버튼-->
+          <div id="signup_buttons">
+            <button class="btn page-btn btn-blue">뒤로가기</button>
+            <button type="submit" class="btn-2 page-btn-2 btn-blue-outline">
+              가입하기
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 풋터 -->
+  <div id="footer">
+    <div class="footer_wrap">
+      <div class="footer-log">
+        <div class="img_wrap">
+          <img src="../../assets/img/logo-image-blue.png" />
+        </div>
+        <h5>© 2022 All Rights Reserved</h5>
+      </div>
+      <div class="footer-item">
+        <div><h5>Contact</h5></div>
+        <div class="footer-text">
+          <div class="img_wrap">
+            <img class="location_img" src="../../assets/img/icon-location.png" />
+          </div>
+          <span>
+            Wisconsin Ave, Suite 700 <br />
+            Chevy Chase, Maryland 20815
+          </span>
+        </div>
+        <div class="footer-text">
+          <div class="img_wrap">
+          <img class="email_img" src="../../assets/img/icon-email.png" /> 
+          </div>
+          <span>support@figma.com</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</html>
+
+<style>
+  /* header */
+
+  #header {
+    position: relative;
+  }
+
+  .header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 15px 20px 20px 10px;
+    height: 80px;
+    margin: 0 auto;
+    background-color: white;
+  }
+
+  .header-container-blue {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #84c5f1;
+    position: relative;
+    padding: 15px 20px 20px 10px;
+    height: 60px;
+    margin: 0 auto;
+    background-color: #84c5f1;
+  }
+
+  .header-item {
+    display: flex;
+    flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex-basis: inherit;
+    flex-grow: 1;
+    width: fit-content;
+  }
+
+  .header-item2 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .header-item2 > .logo {
+    font-size: 50px;
+    color: #84c5f1;
+  }
+
+  .gnb-horizon {
+    padding: 0;
+    text-align: center;
+    display: inline-block;
+    margin-left: 50px;
+  }
+
+  .gnb-horizon li {
+    display: inline-block;
+    padding-bottom: 5px;
+    vertical-align: middle;
+  }
+
+  #body {
+    height: auto;
+    min-height: 700px;
+    position: relative;
+    width: 1280px;
+    padding: 20px;
+    margin: 0 auto;
+    letter-spacing: -0.2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* li,a,ul */
+  ul li,
+  ol li {
+    margin-bottom: 5px;
+  }
+  li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+  }
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .gnb-horizon li > a {
+    font-size: 18px;
+    color: #fff;
+    margin-right: 40px;
+    font-weight: bold;
+  }
+  a,
+  a:hover,
+  a:focus {
+    outline: none;
+    text-decoration: none;
+  }
+  a {
+    color: #444;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .logo {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    display: inline-block;
+  }
+  .sub-logo {
+    color: #84c5f1;
+    font-size: 50px;
+    display: inline-block;
+  }
+
+  /*signup_contents*/
+  #mypage_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5px;
+    align-items: center;
+    width: 75%;
+    min-height: 900px;
+    background-color: #e8ecff;
+    border-radius: 10px;
+  }
+  #mypage_box > h1 {
+    text-align: start;
+  }
+  #mypage_box.signup_wrap {
+    margin: 0 auto;
+  }
+  #mypage_main {
+    background-color: #fff;
+    min-height: 600px;
+    height: auto;
+    width: 90%;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  #mypage_contents {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  #mypage_contents .signup_bar {
+    background-color: #84c5f1;
+    color: #fff;
+    text-align: start;
+    padding: 10px;
+    display: flex;
+    position: relative;
+    margin-bottom: 2.5em;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  #mypage_contents .id_contents .signup_id {
+    width: 40%;
+  }
+
+  #mypage_contents .addr_details .signup_addr2 {
+    width: 23%;
+  }
+  #mypage_contents .addr_details .signup_addr3 {
+    width: 23%;
+  }
+  #mypage_contents .password_validator {
+    color: #014089;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: -2rem;
+  }
+  #signup_buttons {
+    text-align: center;
+    margin-bottom: 3em;
+  }
+
+  label {
+    position: relative;
+    margin-right: 5%;
+    color: #303972;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  input {
+    margin-right: 5%;
+    right: 0%;
+    top: 0%;
+    width: 55%;
+    height: 30px;
+    line-height: 1.5;
+
+    margin-bottom: 3.5em;
+    border: 1px solid #c1bbeb;
+    box-sizing: border-box;
+    border-radius: 0.25rem;
+  }
+
+  /* button */
+
+  .btn {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    border: none;
+    line-height: 1.5;
+    font-weight: 300;
+    border-radius: 0.25rem;
+    white-space: nowrap;
+  }
+  .btn-blue {
+    background-color: #84c5f1;
+    border: 1px solid #84c5f1;
+  }
+  .btn-blue:hover {
+    background-color: #46aaed;
+    border-color: #46aaed;
+  }
+  .page-btn {
+    padding: 6px 12px;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+  }
+
+  .btn-2 {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    border: none;
+    line-height: 1.5;
+    font-weight: 300;
+    border-radius: 0.25rem;
+    white-space: nowrap;
+  }
+
+  .page-btn-2 {
+    padding: 6px 12px;
+    color: #84c5f1;
+    font-size: 1rem;
+    font-weight: 700;
+  }
+  .btn-blue-outline {
+    background-color: #fff;
+    color: #84c5f1;
+    border: 1px solid #84c5f1;
+  }
+  .btn-blue-outline:hover {
+    background-color: #84c5f1;
+    border: 1px solid #84c5f1;
+    color: #fff;
+  }
+
+  /* gnb-nav */
+  .gnb-nav li {
+    margin-bottom: 0px;
+    display: inline-block;
+  }
+  .gnb-nav li > a {
+    display: block;
+    padding: 30px 60px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.6rem;
+  }
+  .gnb-nav li > a:hover,
+  .gnb-nav li > a.active {
+    color: #84c5f1;
+  }
+  .gnb-nav {
+    width: auto;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+  }
+  .gnb-fux {
+    border-color: #ddd #fff #ddd #fff;
+    color: #000;
+    border-width: 1px 0px 1px 0px;
+    border-style: solid;
+  }
+  .content-line-blue {
+    width: 100%;
+    height: 3px;
+    background-color: #84c5f1;
+    margin-bottom: 30px;
+  }
+  /* footer */
+  #footer {
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    padding: 10px 0;
+    background-color: #f5f5f5;
+  }
+  .footer_wrap {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+  .footer-text {
+    display: flex;
+  }
+  .footer-text span{
+    margin-left: 10px;
+  }
+</style>

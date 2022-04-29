@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>product_list</title>
+
+    <link rel="stylesheet" href="../../assets/style/common.css" />
+    <link rel="stylesheet" href="../../assets/style/font.css" />
+    <link rel="stylesheet" href="../../assets/style/admin.css">
+  </head>
+
+  <!-- Header 영역 -->
+  <div id="header">
+    <div class="header-container-blue" style="background-color: #e8ecff">
+      <div class="header-item header-item2">
+        <h1 class="logo">UPSO</h1>
+      </div>
+      <ul class="gnb-horizon">
+        <li>
+          <a style="color: #84c5f1">Logout</a>
+        </li>
+        <li>
+          <button class="btn page-btn btn-blue">메인페이지 바로가기 ▶</button>
+        </li>
+      </ul>
+    </div>
+    <div class="header-container" style="height: 0px"></div>
+  </div>
+
+  <!-- Body 영역  -->
+  <div id="body">
+    <!-- Nav 영역 -->
+    <div id="nav">
+      <div class="nav-item">
+        <div id="nav-profile">
+          <div class="nav-profile-item">
+            <img src="../../assets/img/icon-profile.png" />
+          </div>
+          <div>
+            <ul>
+              <li><h3>홍길동</h3></li>
+              <li><span>User e-mail@naver.com</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="nav-item nav-drop">
+        <div id="nav-bar">
+          <div class="nav-text">My Menu</div>
+        </div>
+        <ul>
+          <li class="nav-bar-child" onclick="location.href = '../admin/product_list.html'">
+            <img src="../../assets/img/icon-shopping.png" />
+            <a href="#">상품관리</a>
+          </li>
+          <li class="nav-bar-child">
+            <img src="../../assets/img/icon-email.png" />
+            <a href="#">문의 계시판</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Contents 영역 -->
+    <div id="contents_box">
+      <div class="product_update">
+        <h1 style="margin-top: 20px">&nbsp &nbsp상품 관리</h1>
+        <p
+          style="
+            background-color: #84c5f1;
+            height: 10px;
+            border-radius: 5px;
+            margin: 20px;
+          "
+        ></p>
+        <div id="gnb" class="gnb-fux">
+          <ul class="gnb-nav">
+            <li>
+              <a href="#">전체상품</a>
+            </li>
+            <li>
+              <a href="#">생활용품</a>
+            </li>
+            <li>
+              <a href="#">주방용품</a>
+            </li>
+            <li>
+              <a href="#">가전용품</a>
+            </li>
+            <li>
+              <a href="#">Q&A</a>
+            </li>
+          </ul>
+        </div>
+        <br /><br />
+        <table class="product_row" border="1">
+          <colgroup>
+            <col />
+            <col width="55%" />
+            <col width="18%" />
+          </colgroup>
+          <thead>
+            <th
+              colspan="2"
+              style="
+                background-color: rgb(236, 236, 236);
+                border-left: none;
+                font-size: 18px;
+                padding: 20px 15px;
+              "
+            >
+              상품정보
+            </th>
+            <th
+              style="
+                background-color: rgb(236, 236, 236);
+                border-right: none;
+                font-size: 18px;
+              "
+            >
+              상품수정
+            </th>
+          </thead>
+        
+          <tbody class="product_list_row">
+            <tr>
+              <td rowspan="3" class="product_image">이미지</td>
+              <td class="product_list_name">&nbsp상품명 : {product_name}</td>
+              <td rowspan="3" class="product_CD">
+                <ul>
+                  <li onclick="location.href = '../admin/product_update.html'"><button>수정</button></li>
+                  <li><button>삭제</button></li>
+                </ul>
+              </td>
+            </tr>
+        
+            <tr>
+              <td class="product_list_category">&nbsp상품 분류 : {주방용품}</td>
+            </tr>
+        
+            <tr>
+              <td class="product_list_data">&nbsp 등록일 : {data}</td>
+            </tr>
+          </tbody>
+        
+          <tbody class="product_list_row">
+            <tr>
+              <td rowspan="3" class="product_image">이미지</td>
+              <td class="product_list_name">&nbsp상품명 : {product_name}</td>
+              <td rowspan="3" class="product_CD">
+                <ul>
+                  <li><button>수정</button></li>
+                  <li><button>삭제</button></li>
+                </ul>
+              </td>
+            </tr>
+        
+            <tr>
+              <td class="product_list_category">&nbsp상품 분류 : {주방용품}</td>
+            </tr>
+        
+            <tr>
+              <td class="product_list_data">&nbsp 등록일 : {data}</td>
+            </tr>
+          </tbody>
+        
+          <tbody class="product_list_row">
+            <tr>
+              <td rowspan="3" class="product_image">
+                <img
+                  src="/10510007737883-54fb7b82-3e6a-40ac-9742-0ed1841f0e0d.jpg"
+                  alt=""
+                />
+              </td>
+              <td class="product_list_name">&nbsp상품명 : {product_name}</td>
+              <td rowspan="3" class="product_CD">
+                <ul>
+                  <li><button>수정</button></li>
+                  <li><button>삭제</button></li>
+                </ul>
+        
+                <tr>
+                  <td class="product_list_category">&nbsp상품 분류 : {주방용품}</td>
+                </tr>
+        
+                <tr>
+                  <td class="product_list_data">&nbsp 등록일 : {data}</td>
+                </tr>
+              </td>
+            </tr>
+          </tbody>
+        
+          <tbody class="product_list_row">
+            <tr>
+              <td rowspan="3" class="product_image">이미지</td>
+              <td class="product_list_name">&nbsp상품명 : {product_name}</td>
+              <td rowspan="3" class="product_CD">
+                <ul>
+                  <li><button>수정</button></li>
+                  <li><button>삭제</button></li>
+                </ul>
+              </td>
+            </tr>
+        
+            <tr>
+              <td class="product_list_category">&nbsp상품 분류 : {주방용품}</td>
+            </tr>
+        
+            <tr>
+              <td class="product_list_data">&nbsp 등록일 : {data}</td>
+            </tr>
+          </tbody>
+        </table>
+        
+
+        <button class="btn_add_product" onclick="location.href = '../admin/product_add.html'">등록</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="header-container" style="height: 0px"></div>
+
+
+  <!-- 풋터 -->
+  <div id="footer">
+    <div class="footer_wrap">
+      <div class="footer-log">
+        <div class="img_wrap">
+          <img src="../../assets/img/logo-image-blue.png" />
+        </div>
+        <h5>© 2022 All Rights Reserved</h5>
+      </div>
+      <div class="footer-item">
+        <div><h5>Contact</h5></div>
+        <div class="footer-text">
+          <div class="img_wrap">
+            <img class="location_img" src="../../assets/img/icon-location.png" />
+          </div>
+          <span>
+            Wisconsin Ave, Suite 700 <br />
+            Chevy Chase, Maryland 20815
+          </span>
+        </div>
+        <div class="footer-text">
+          <div class="img_wrap">
+          <img class="email_img" src="../../assets/img/icon-email.png" /> 
+          </div>
+          <span>support@figma.com</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</html>

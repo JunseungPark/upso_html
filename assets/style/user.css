@@ -1,0 +1,485 @@
+
+/*body*/
+#body {
+  height: auto;
+  min-height: 700px;
+  position: relative;
+  margin: 0 auto;
+  letter-spacing: -0.2px;
+  display: flex;
+  gap: 20px;
+  margin-bottom: 50px;
+}
+.nav-content-hor {
+  background-color: #fff;
+  z-index: 1;
+  padding: 4px 12px 6px 12px;
+  height: 40px;
+  width: 100%;
+}
+
+#mypage_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5px;
+  align-items: center;
+  width: 95%;
+  min-height: 900px;
+  background-color: #e8ecff;
+  border-radius: 10px;
+}
+#mypage_box > h1 {
+  text-align: start;
+}
+
+#mypage_box .userModify_bar {
+  bottom: 100%;
+  background-color: #84c5f1;
+  color: #fff;
+  text-align: start;
+  flex-direction: column;
+  display: inline-flex;
+  width: 93%;
+  padding: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+#mypage_box .addrModify_bar {
+  top: 0%;
+  bottom: 100%;
+  background-color: #84c5f1;
+  color: #fff;
+  margin-bottom: 2.5em;
+  text-align: start;
+  padding: 10px;
+}
+#mypage_main {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background-color: white;
+}
+
+#mypage_contents {
+  text-align: center;
+  margin-top: 2.5em;
+}
+#mypage_contents .id_contents {
+  margin-bottom: 2.5em;
+}
+#mypage_contents .addr_details .signup_addr2 {
+  width: 23%;
+}
+#mypage_contents .addr_details .signup_addr3 {
+  width: 23%;
+}
+#mypage_buttons {
+  text-align: center;
+  margin-bottom: 3em;
+}
+
+/*---------------------- modifiy ----------------------*/
+#modify_box {
+  display: inline-block;
+  vertical-align: top;
+  width: 95%;
+  margin-left: 20px;
+  background: #e8ecff;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 100px;
+}
+#modify_box > h1 {
+  text-align: start;
+}
+
+#modify_main {
+  display: inline-block;
+  background-color: white;
+  width: 100%;
+}
+
+#modify_contents {
+  text-align: center;
+  margin-top: 2.5em;
+}
+#modify_box .userModify_bar {
+  background-color: #84c5f1;
+  color: #fff;
+  text-align: start;
+  flex-direction: column;
+  display: inline-flex;
+  width: 100%;
+  padding: 10px 0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+#modify_box .userModify_bar .userModify_title{
+  margin-left: 10px;
+}
+#addrModify_bar {
+  bottom: 100%;
+  background-color: #84c5f1;
+  color: #fff;
+  margin-bottom: 2.5em;
+  text-align: start;
+  padding: 10px;
+
+}
+#modify_contents {
+  width: 100%;
+}
+#modify_contents .input_wrap {
+  display: flex;
+  margin-left:25%;
+  margin-bottom: 2.5em;
+}
+
+#modify_contents .input_wrap label {
+  flex-basis: 15%;
+}
+#modify_contents .input_wrap input {
+  flex-basis: 50%;
+}
+
+#addr_contents .addr_juso{
+  display: flex;
+  flex-direction: column;
+  margin-left:25%;
+  margin-bottom: 30px;
+}
+
+#addr_contents .addr_juso label{
+  margin-bottom: 20px;
+}
+
+#addr_contents .addr_juso .signup_addr1{
+  margin-left: 30px;
+}
+.addr_details {
+  display: flex;
+}
+
+.addr_details input {
+  margin-left: 30px;
+  width: 20%;
+}
+#modify_buttons {
+  text-align: center;
+  margin-bottom: 30px;
+}
+label {
+  position: flex;
+  margin-right: 5%;
+
+  color: #303972;
+  font-size: 14px;
+  font-weight: bold;
+}
+input {
+  margin-right: 5%;
+  left: 19.66%;
+  right: 0%;
+  top: 0%;
+  width: 55%;
+  height: 30px;
+  line-height: 1.5;
+  margin-bottom: 3.5em;
+  border: 1px solid #c1bbeb;
+  box-sizing: border-box;
+  border-radius: 0.25rem;
+}
+
+/*---------------------- modifiy ----------------------*/
+
+/*---------------------- order ----------------------*/
+#mypage_main #orderlist_table {
+
+  width: 100%;
+
+  background-color: white;
+
+}
+
+#mypage_main #customers {
+
+  width: 95%;
+
+  margin: auto;
+
+}
+
+#orderlist_table {
+  display: inline-table;
+}
+table {
+  border-collapse: collapse;
+  width: 700px;
+}
+
+th {
+  background-color: #f3f3f3;
+}
+th,
+td {
+  padding: 0.5em;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+#orderlist_table .orderlist_product {
+  text-align: start;
+}
+#orderlist_table .orderlist_delivery {
+  text-align: start;
+  font-size: 15px;
+}
+#orderlist_table .brand_name {
+  color: #23a6f0;
+}
+#orderlist_table 
+ {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#orderlist_table .option_name {
+  color: #616060;
+  font-size: 14px;
+  font-weight: bold;
+}
+#orderlist_table .div {
+  display: inline;
+  position: relative;
+}
+
+#orderlist_buttons .order_button{ 
+    width: 130px;
+margin: 7px;
+height: 30px;
+border-radius: 5px;
+font-size: 16px;
+font-weight: bold;
+background-color: white;
+}
+
+
+/*---------------------- order ----------------------*/
+/*---------------------- q&a ----------------------*/
+#mypage_contents .qna_contents{
+  text-align:start;
+  padding-left: 3em;
+  font-size: 20px;
+}
+
+#qna_title .qna_text{
+  font-size: 20px;
+}
+
+#qna_buttons {
+  display: block;
+  float: right;
+  margin-right: 120px;
+  background-color: #84c5f1;
+  color: white;
+  width: 200px;
+  height: 45px;
+  font-weight: bold;
+  font-size: 22px;
+  text-align: center;
+  border-radius: 10px;
+  margin-top:1em;
+}
+
+#qna_select {
+  width: 200px;
+}
+
+.main_qna_title {
+  padding-left: 10px;
+}
+
+label {
+  position: relative;
+  display: flex;
+  color: #303972;
+  font-size: 16px;
+  font-weight: bold;
+  padding-left: 20px;
+  margin-left: 10px;
+  padding-top: 10px;
+  margin-right: 20px;
+}
+
+#select_box {
+  position: relative;
+  display: flex;
+  text-align: center;
+  color: #303972;
+  right: auto;
+  font-size: 14px;
+  font-weight: bold;
+}
+  #select_box .product_title {
+  margin-right: 1em;
+
+}
+
+.title_data {
+  padding-top: 11px;
+  margin-left: 10px;
+  font-size: 15px;
+  color: #777;
+}
+
+select {
+  position: relative;
+  box-sizing: border-box;
+  border-radius: 0.25rem;
+  display: flex;
+  width: 300px;
+  height: 39px;
+  margin-left: 1em;
+  margin-right: 1em;
+  padding-left: 5px;
+}
+
+textarea {
+  margin-left: 30px;
+  margin-top: 20px;
+  width: 90%;
+  min-height: 500px;
+  vertical-align: top;
+  line-height: 1.5;
+  border-radius: 10px;
+  resize: none;
+  font-size: 18px;
+  outline: none;
+  border: 1px solid #999;
+}
+
+#mypage_box .qna_box {
+  height: 900px;
+}
+
+button {
+    font-weight: bold;
+    border-radius: 5px;
+    border: 2px solid #cbcbcb;
+    box-shadow: 3px 3px 3px #cbcbcb;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.common_button,
+.pay_button,
+.shopping_button {
+    padding: 12px 25px;
+    font-size: 17px;
+}
+
+.common_button {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.pay_button {
+    width: 280px;
+}
+
+.shopping_button {
+    width: 300px;
+}
+
+/* 버튼에 hover할 시 변하는 부분 */
+
+.pay_button:hover,
+.shopping_button:hover,
+.blue_button:hover,
+.white_button:hover {
+    border: 2px solid rgb(179, 179, 179);
+}
+
+.blue_button,
+.pay_button {
+    color: white;
+    background-color: #84c5f1;
+}
+
+.shopping_button,
+.white_button {
+    color: #84c5f1;
+    background-color: white;
+}
+
+.blue_button,
+.white_button {
+    width: 120px;
+    padding: 10px 15px;
+    margin: 5px;
+}
+
+.qna_button {
+    text-align: right;
+    margin-top: 20px;
+    margin-right: 55px;
+}
+
+.qna_button .blue_button {
+  width: 200px;
+  height: 45px;
+}
+
+/*---------------------- q&a ----------------------*/
+
+/*---------------------- q&alist ----------------------*/
+
+#qna_tablelist {
+  display: inline-table;
+  width: 100%;
+}
+#qna_tablelist table {
+  border-collapse: collapse;
+  width: 95%;
+  margin: 0 auto;
+}
+
+th {
+  background-color: #f3f3f3;
+}
+th,
+td {
+  padding: 1em;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  font-size: 20px;
+}
+#customer_id .qna_idopen .qna_idsecret {
+  display: inline;
+}
+#orderlist_table .orderlist_product {
+  text-align: start;
+}
+#orderlist_table .orderlist_delivery {
+  text-align: start;
+  font-size: 15px;
+}
+#orderlist_table .brand_name {
+  color: #23a6f0;
+}
+#orderlist_table .product_name {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#orderlist_table .option_name {
+  color: #616060;
+  font-size: 14px;
+  font-weight: bold;
+}
+#orderlist_table .div {
+  display: inline;
+  position: relative;
+}

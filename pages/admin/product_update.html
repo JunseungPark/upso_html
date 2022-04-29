@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>product_update</title>
+
+    <link rel="stylesheet" href="../../assets/style/common.css" />
+    <link rel="stylesheet" href="../../assets/style/font.css" />
+    <link rel="stylesheet" href="../../assets/style/admin.css">
+  </head>
+
+    <!-- Header 영역 -->
+    <div id="header">
+      <div class="header-container-blue" style="background-color: #e8ecff">
+        <div class="header-item header-item2">
+          <h1 class="logo">UPSO</h1>
+        </div>
+        <ul class="gnb-horizon">
+          <li>
+            <a style="color: #84c5f1">Logout</a>
+          </li>
+          <li>
+            <button class="btn page-btn btn-blue">메인페이지 바로가기 ▶</button>
+          </li>
+        </ul>
+      </div>
+      <div class="header-container" style="height: 0px"></div>
+  
+     <!-- Body 영역  -->
+      <div id="body">
+      <!-- Nav 영역 -->
+         <div id="nav">
+      <div class="nav-item">
+        <div id="nav-profile">
+          <div class="nav-profile-item">
+            <img src="../../assets/img/icon-profile.png" />
+          </div>
+          <div>
+            <ul>
+              <li><h3>홍길동</h3></li>
+              <li><span>User e-mail@naver.com</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="nav-item nav-drop">
+        <div id="nav-bar">
+          <div class="nav-text">My Menu</div>
+        </div>
+        <ul>
+          <li class="nav-bar-child" onclick="location.href = '../admin/product_list.html'">
+            <img src="../../assets/img/icon-shopping.png" />
+            <a href="#">상품관리</a>
+          </li>
+          <li class="nav-bar-child">
+            <img src="../../assets/img/icon-email.png" />
+            <a href="#">문의 계시판</a>
+          </li>
+        </ul>
+        
+      </div>
+  
+      
+      </div>
+  
+  
+  
+    <!-- Contents 영역 -->
+      <div id="contents_box">
+        <div class="product_update">
+          <h1 style="margin-top: 20px;">&nbsp &nbsp상품 정보 수정</h1>
+          <p style="background-color: #84c5f1; height: 10px; border-radius: 5px; margin: 20px;"></p>
+  
+          <table class="product_info">
+          
+            <colgroup>
+            <col width="6%" >
+            <col width="4%" >
+            <col width="4%" >
+            <col width="12%">
+            </colgroup>
+  
+            <tr>
+              <td>상품 카테고리 : </td>
+              <td><select class="product_category">
+                <option value>생활용품</option>
+                <option value>주방용품</option>
+                <option value>욕실용품</option>
+              </select></td>
+  
+              <td style="line-height: 3;">상품명 : </td>
+              <td><input type="text" class="product_name"></td>
+            </tr>
+  
+            <tr>
+              <td>판매 가격 : </td>
+              <td><input type="text" class="product_price"> 원</td>
+  
+            </tr>
+  
+          </table>
+  
+        
+        <p style="background-color: #84c5f1; height: 10px; border-radius: 5px; margin: 20px;"></p>
+        <div class="product_script">
+        <h2>&nbsp &nbsp상세 설명</h2>
+        <textarea type="text" class="script_area"></textarea>
+  
+        <div class="select_image">
+            상품 이미지
+            <input type="file">
+            <button class="product_add">수정</button>
+            </div>
+        </div>
+  
+  
+      </div>
+    </div>
+  </div>
+         
+    <div class="header-container" style="height: 0px"></div>
+    <!-- Footer 영역 -->
+    <div id="footer">
+      <div class="footer-item">
+        <img src="img/logo-image-blue.png" />
+        <h5>© 2022 All Rights Reserved</h5>
+      </div>
+      <div class="footer-item">
+        <ul>
+          <li><h5>Contact</h5></li>
+          <li class="footer-text">
+            <img src="img/icon-location.png" />
+            <span>
+              Wisconsin Ave, Suite 700 <br />
+              Chevy Chase, Maryland 20815
+            </span>
+          </li>
+          <li class="footer-text">
+            <img src="img/icon-email.png" />
+            <span>support@figma.com</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</html>

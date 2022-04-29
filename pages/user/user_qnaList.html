@@ -1,0 +1,197 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>user</title>
+
+    <link rel="stylesheet" href="../../assets/style/common.css" />
+    <link rel="stylesheet" href="../../assets/style/font.css" />
+    <link rel="stylesheet" href="../../assets/style/user.css">
+  </head>
+  <!-- 마이페이지 헤더 -->
+  <div id="header">
+    <div class="header-container-blue" style="background-color: #e8ecff">
+      <div class="header-item header-item2">
+        <h1 class="logo">UPSO</h1>
+      </div>
+      <ul class="gnb-horizon">
+        <li>
+          <a style="color: #84c5f1">Logout</a>
+        </li>
+        <li onclick="location.href = '../main/main2.html'">
+          <button class="btn page-btn btn-blue">메인페이지 바로가기 ▶</button>
+        </li>
+      </ul>
+    </div>
+    <div class="header-container" style="height: 20px"></div>
+  </div>
+
+  <div id="body">
+    <div id="nav">
+      <div class="nav-item">
+        <div id="nav-profile">
+          <div class="nav-profile-item">
+            <img src="../../assets/img/icon-profile.png" />
+          </div>
+          <div>
+            <ul>
+              <li><h3>홍길동</h3></li>
+              <li><span>User e-mail@naver.com</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="nav-item nav-drop">
+        <div id="nav-bar">
+          <div class="nav-text">My Menu</div>
+        </div>
+        <ul>
+          <li class="nav-bar-child"  onclick="location.href = '../user/user_orderList.html'">
+            <img src="../../assets/img/icon-shopping.png" />
+            <a href="#">주문내역</a>
+          </li>
+          <li class="nav-bar-child"  onclick="location.href = '../user/user_qnaList.html'">
+            <img src="../../assets/img/icon-email.png" />
+            <a href="#">문의내역</a>
+          </li>
+          <li class="nav-bar-child"  onclick="location.href = '../user/user_modify.html'">
+            <img src="../../assets/img/icon-user.png" /><a href="#">회원정보 수정</a>
+          </li>
+          <li class="nav-bar-child"  onclick="location.href = '../admin/product_list.html'">
+            <img src="../../assets/img/icon-user.png" /><a href="#">어드민</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="mypage_box">
+      <h1 style="padding: 1em">문의내역</h1>
+
+      <div id="mypage_main">
+        <div id="mypage_contents">
+          <!--QnA 리스트 테이블-->
+          <div id="qna_tablelist">
+            <table id="qna_table">
+              <tr>
+                <th>답변상태</th>
+                <th>제목</th>
+                <th>작성자</th>
+                <th>작성일</th>
+              </tr>
+              <!--1개-->
+              <tr>
+                <td>답변 대기중</td>
+                <td>
+                  <div class="qna_selectList">상품 상세정보</div>
+                </td>
+                <td>
+                  <div id="customer_id">
+                    <div class="qna_idopen">
+                      aaa
+                      <div class="qna_idsecret">*****</div>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="qna_data">2022.04.21</div>
+                </td>
+              </tr>
+
+              <!--2개-->
+              <tr>
+                <td>답변 완료</td>
+                <td>
+                  <div class="qna_selectList">환불 문의</div>
+                </td>
+                <td>
+                  <div id="customer_id">
+                    <div class="qna_idopen">
+                      aaa
+                      <div class="qna_idsecret">*****</div>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="qna_data">2022.04.21</div>
+                </td>
+              </tr>
+
+              <!--3개-->
+              <tr>
+                <td>답변 완료</td>
+                <td>
+                  <div class="qna_selectList">상품 상세정보</div>
+                </td>
+                <td>
+                  <div id="customer_id">
+                    <div class="qna_idopen">
+                      aaa
+                      <div class="qna_idsecret">*****</div>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="qna_data">2022.04.21</div>
+                </td>
+              </tr>
+
+              <!--4개-->
+              <tr>
+                <td>답변 대기중</td>
+                <td>
+                  <div class="qna_selectList">환불 문의</div>
+                </td>
+                <td>
+                  <div id="customer_id">
+                    <div class="qna_idopen">
+                      aaa
+                      <div class="qna_idsecret">*****</div>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="qna_data">2022.04.21</div>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- 풋터 -->
+  <div id="footer">
+    <div class="footer_wrap">
+      <div class="footer-log">
+        <div class="img_wrap">
+          <img src="../../assets/img/logo-image-blue.png" />
+        </div>
+        <h5>© 2022 All Rights Reserved</h5>
+      </div>
+      <div class="footer-item">
+        <div><h5>Contact</h5></div>
+        <div class="footer-text">
+          <div class="img_wrap">
+            <img class="location_img" src="../../assets/img/icon-location.png" />
+          </div>
+          <span>
+            Wisconsin Ave, Suite 700 <br />
+            Chevy Chase, Maryland 20815
+          </span>
+        </div>
+        <div class="footer-text">
+          <div class="img_wrap">
+          <img class="email_img" src="../../assets/img/icon-email.png" /> 
+          </div>
+          <span>support@figma.com</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</html>
+
+<style>
+</style>

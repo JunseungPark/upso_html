@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../assets/style/common.css">
+    <link rel="stylesheet" href="../../assets/style/order.css">
+    <title>메인-장바구니</title>
+</head>
+
+<body>
+    <!-- 메인페이지 헤더 -->
+    <div id="header">
+      <div class="header-container-blue">
+          <div class="header-item">
+              <img src="../../assets/img/logo-image-white.png" />
+
+              <h1 class="logo">UPSO-생활용품샵</h1>
+          </div>
+
+          <ul class="gnb-horizon">
+            <li>
+              <a>홍길동님</a>
+            </li>
+            <li>
+                <a onclick="location.href = '../user/user_orderList.html'">마이페이지</a>
+            </li>
+            <li>
+                <a onclick="location.href = '../order/basket.html'">장바구니</a>
+            </li>
+            <li>
+                <a onclick="location.href = '../main/main.html'">로그아웃</a>
+            </li>
+          </ul>
+      </div>
+      <div class="header-container">
+          <h1 class="sub-logo">UPSO</h1>
+      </div>
+    </div>
+    <div class="contents">
+      <div class="content_wrap">
+            <!-- content 부분 -->
+            <div class="form">
+                <div class="basket_content">
+                    <div class="basket_title">
+                        <h1>장바구니</h1>
+                    </div>
+                    <div class="basket_count">
+                        <p>전체상품 : <span>3</span></p>
+                    </div>
+                    <!-- <br/> -->
+                    <form action="">
+                        <table class="basket_table">
+                            <tr class="table_title">
+                                <th width="5%"><input type="checkbox" name="selectAll"></th>
+                                <th width="35%" colspan="2">상품정보</th>
+                                <th width="20%">수량</th>
+                                <th width="15%">주문금액</th>
+                                <th width="15%">배송비</th>
+                            </tr>
+                            <tr class="table_content">
+                                <td><input type="checkbox"></td>
+                                <td>
+                                    <img src="../../assets/img/dawoni.png" alt="">
+                                </td>
+                                <td class="table_title_td">
+                                    <span>UPSO</span> <br/> 다우니 퍼퓸세제
+                                </td>
+                                <td>
+                                    <div class="count_button">
+                                        <input type="button" class="count_btn" value="-">
+                                        <span class="click_count">2</span>
+                                        <input type="button" class="count_btn" value="+">
+                                    </div>
+                                </td>
+                                <td>5000원</td>
+                                <td>3000원</td>
+                            </tr>
+                            <tr class="table_content">
+                                <td><input type="checkbox"></td>
+                                <td>
+                                    <img src="../../assets/img/dawoni.png"   alt="">
+                                </td>
+                                <td class="table_title_td">
+                                    <span>UPSO</span> <br/> 다우니 퍼퓸세제
+                                </td>
+                                <td>
+                                    <div class="count_button">
+                                        <input type="button" class="count_btn" value="-">
+                                        <span class="click_count">2</span>
+                                        <input type="button" class="count_btn" value="+">
+                                    </div>
+                                </td>
+                                <td>5000원</td>
+                                <td>3000원</td>
+                            </tr>
+                            <tr class="table_content">
+                                <td><input type="checkbox"></td>
+                                <td>
+                                    <img src="../../assets/img/dawoni.png"   alt="">
+                                </td>
+                                <td class="table_title_td">
+                                    <span>UPSO</span> <br/> 다우니 퍼퓸세제
+                                </td>
+                                <td>
+                                    <div class="count_button">
+                                        <input type="button" class="count_btn" value="-">
+                                        <span class="click_count">2</span>
+                                        <input type="button" class="count_btn" value="+">
+                                    </div>
+                                </td>
+                                <td>5000원</td>
+                                <td>3000원</td>
+                            </tr>
+                        </table>
+                        <div class="basket_pay">
+                            <div class="pay pay_1">
+                                <p>선택 상품 금액</p>
+                                <p>10000원</p>
+                            </div>
+                            <div class="pay pay_operator">
+                                <p>+</p>
+                            </div>
+                            <div class="pay pay_2">
+                                <p>배송비</p>
+                                <p>3000원</p>
+                            </div>
+                            <div class="pay pay_operator">
+                                <p>=</p>
+                            </div>
+                            <div class="pay">
+                                <p>총 주문금액</p>
+                                <p class="pay_sum">13000원</p>
+                            </div>
+                        </div>
+                        <div class="basket_button" onclick="location.href ='../order/order.html'">
+                            <button class="pay_button">구매하기</button>
+                            <button class="shopping_button">계속 쇼핑하기</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+      <div class="footer_wrap">
+        <div class="footer-log">
+          <div class="img_wrap">
+            <img src="../../assets/img/logo-image-blue.png" />
+          </div>
+          <h5>© 2022 All Rights Reserved</h5>
+        </div>
+        <div class="footer-item">
+          <div><h5>Contact</h5></div>
+          <div class="footer-text">
+            <div class="img_wrap">
+              <img class="location_img" src="../../assets/img/icon-location.png" />
+            </div>
+            <span>
+              Wisconsin Ave, Suite 700 <br />
+              Chevy Chase, Maryland 20815
+            </span>
+          </div>
+          <div class="footer-text">
+            <div class="img_wrap">
+            <img class="email_img" src="../../assets/img/icon-email.png" /> 
+            </div>
+            <span>support@figma.com</span>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+
+</html>

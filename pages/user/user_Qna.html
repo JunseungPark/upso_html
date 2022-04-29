@@ -1,0 +1,141 @@
+<link rel="stylesheet" href="/sample.html" />
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>user</title>
+
+    <link rel="stylesheet" href="../../assets/style/common.css" />
+    <link rel="stylesheet" href="../../assets/style/font.css" />
+    <link rel="stylesheet" href="../../assets/style/user.css">
+  </head>
+  <!-- 마이페이지 헤더 -->
+  <div id="header">
+    <div class="header-container-blue" style="background-color: #e8ecff">
+      <div class="header-item header-item2">
+        <h1 class="logo">UPSO</h1>
+      </div>
+      <ul class="gnb-horizon">
+        <li>
+          <a style="color: #84c5f1">Logout</a>
+        </li>
+        <li onclick="location.href = '../main/main2.html'">
+          <button class="btn page-btn btn-blue">메인페이지 바로가기 ▶</button>
+        </li>
+      </ul>
+    </div>
+    <div class="header-container" style="height: 20px"></div>
+  </div>
+
+  <div id="body">
+    <div id="nav">
+      <div class="nav-item">
+        <div id="nav-profile">
+          <div class="nav-profile-item">
+            <img src="../../assets/img/icon-profile.png" />
+          </div>
+          <div>
+            <ul>
+              <li><h3>홍길동</h3></li>
+              <li><span>User e-mail@naver.com</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="nav-item nav-drop">
+        <div id="nav-bar">
+          <div class="nav-text">My Menu</div>
+        </div>
+        <ul>
+          <li class="nav-bar-child"  onclick="location.href = '../user/user_orderList.html'">
+            <img src="../../assets/img/icon-shopping.png" />
+            <a href="#">주문내역</a>
+          </li>
+          <li class="nav-bar-child"  onclick="location.href = '../user/user_qnaList.html'">
+            <img src="../../assets/img/icon-email.png" />
+            <a href="#">문의내역</a>
+          </li>
+          <li class="nav-bar-child"  onclick="location.href = '../user/user_modify.html'">
+            <img src="../../assets/img/icon-user.png" /><a href="#">회원정보 수정</a>
+          </li>
+          <li class="nav-bar-child"  onclick="location.href = '../admin/product_list.html'">
+            <img src="../../assets/img/icon-user.png" /><a href="#">어드민</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="mypage_box">
+      <div id="mypage_main" class="qna_box">
+          <div id="mypage_contents">
+              <div class="qna_contents">
+                  <h1 class="main_qna_title">상품 문의</h1>
+                  <p style="
+              background-color: #84c5f1;
+              height: 10px;
+              border-radius: 5px;
+              margin: 20px;
+            "></p>
+                  <div id="qna_title">
+                      <div id="select_box">
+                          <label for="select_title" class="select_title">문의 유형</label>
+                          <select name="qna_select" id="qna_select">
+                            <option value="product_qna">제품 상세문의</option>
+                            <option value="refund_qna">환불문의</option>
+                          </select>
+                          <label for="select_title" class="select_title">상품명</label>
+                          <div class="title_data">바스 논슬립 규조토 발매트</div>
+                      </div>
+                      <p style="
+                background-color: #84c5f1;
+                height: 10px;
+                border-radius: 5px;
+                margin: 20px;
+              "></p>
+                      <div class="qna_text">
+                          <label for="qna_text" class="qna_text" id="qna_text">문의내용</label
+                >
+              </div>
+            </div>
+          </div>
+          <textarea id="qna_textarea" name="qna_textarea"> </textarea>
+        </div>
+        <div class="small_button qna_button">
+          <button class="blue_button">등록</button>
+      </div>
+      </div>
+    </div>
+  </div>
+  <!-- 풋터 -->
+  <div id="footer">
+    <div class="footer_wrap">
+      <div class="footer-log">
+        <div class="img_wrap">
+          <img src="../../assets/img/logo-image-blue.png" />`
+        </div>
+        <h5>© 2022 All Rights Reserved</h5>
+      </div>
+      <div class="footer-item">
+        <div><h5>Contact</h5></div>
+        <div class="footer-text">
+          <div class="img_wrap">
+            <img class="location_img" src="../../assets/img/icon-location.png" />
+          </div>
+          <span>
+            Wisconsin Ave, Suite 700 <br />
+            Chevy Chase, Maryland 20815
+          </span>
+        </div>
+        <div class="footer-text">
+          <div class="img_wrap">
+          <img class="email_img" src="../../assets/img/icon-email.png" /> 
+          </div>
+          <span>support@figma.com</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</html>
+
+<style>
+</style>
