@@ -195,3 +195,55 @@ background-color: #84c5f1;
   position: relative;
 }
 
+/* 회원가입 */
+.signup_content {
+  height: 600px;
+}
+
+.validation {
+  height: 50px;
+}
+
+.password_input p {
+  height: 50px;
+}
+
+.password_input .input_3 {
+  margin-left: 60px;
+}
+
+.password_input .input_4 {
+  margin-left: 48px;
+}
+
+.password_input .input_2 {
+  margin-left: 75px;
+}
+
+.password_input .input_id {
+  width: 200px;
+}
+
+.password_input button {
+  height: 35px;
+  font-size: 13px;
+  width: 88px;
+  margin-left: 5px;
+  margin-right: 0;
+  background-color: #84c5f1;
+  color: white;
+}
+
+.password_input .detail_addr {
+  width: 136px;
+  margin: 0;
+}
+
+.password_input .detail_addr1 {
+  margin-right: 5px;
+}
+
+.password_input .detail_address {
+  margin-left: 50px;
+}
+
