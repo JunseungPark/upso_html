@@ -3,30 +3,30 @@
 }
 #contents_box {
   display: inline-block;
-  vertical-align: top;
   width: 80%;
   height: 90%;
-  margin-left: 20px;
-  background: #e8ecff;
-  border-radius: 10px;
   padding: 10px;
+  margin-left: 20px;
+  border-radius: 10px;
+  background: #e8ecff;
+  vertical-align: top;
 }
 
 #contents_box .product_update {
   display: inline-block;
-  background-color: white;
-  min-height: 900px;
   width: 100%;
   height: 100%;
+  min-height: 900px;
+  background-color: white;
   border-radius: 10px;
 }
 #contents_box .contents_table {
   position: relative;
+  left: 20px;
+  width: 50%;
+  border-spacing: 10px;
   text-align: left;
   vertical-align: middle;
-  width: 50%;
-  left: 20px;
-  border-spacing: 10px;
 }
 
 #contents_box .product_info {
@@ -40,51 +40,51 @@
 
 #contents_box .product_name {
   width: 400px;
-  font-size: 20px;
+  height: 10px;
   border: solid;
   border-color: #84c5f1;
   border-radius: 5px;
-  height: 10px;
+  font-size: 20px;
 }
 #contents_box .product_category {
   width: 300px;
-  font-size: 20px;
   border: solid;
   border-color: #84c5f1;
   border-radius: 5px;
+  font-size: 20px;
 }
 #contents_box .product_price {
-  font-size: 20px;
+  height: 10px;
   width: 150px;
+  font-size: 20px;
   border: solid;
   border-color: #84c5f1;
   border-radius: 5px;
-  height: 10px;
 }
 .product_script .script_area {
-  margin-left: 30px;
   width: 90%;
   height: 100%;
   min-height: 300px;
+  margin-left: 30px;
+  border-radius: 10px;
+  font-size: 18px;
   vertical-align: top;
   line-height: 1.5;
-  border-radius: 10px;
   resize: none;
-  font-size: 18px;
 }
 
 #contents_box .product_add {
   display: block;
-  float: right;
-  margin-right: 120px;
-  background-color: #84c5f1;
-  color: white;
   width: 200px;
   height: 45px;
+  float: right;
+  margin-right: 120px;
   border: solid;
+  border-radius: 10px;
+  background-color: #84c5f1;
+  color: white;
   font-weight: bold;
   font-size: 22px;
-  border-radius: 10px;
 }
 
 #contents_box .select_image {
@@ -96,19 +96,19 @@
 
 #contents_box .product_update {
   display: inline-block;
-  background-color: white;
-  min-height: 900px;
   width: 100%;
   height: 100%;
+  min-height: 900px;
   border-radius: 10px;
+  background-color: white;
 }
 #contents_box .contents_table {
   position: relative;
+  left: 20px;
+  width: 50%;
+  border-spacing: 10px;
   text-align: left;
   vertical-align: middle;
-  width: 50%;
-  left: 20px;
-  border-spacing: 10px;
 }
 
 #contents_box .product_info {
@@ -122,58 +122,61 @@
 
 #contents_box .product_name {
   width: 400px;
-  font-size: 20px;
+  height: 10px;
   border: solid;
   border-color: #84c5f1;
   border-radius: 5px;
+  font-size: 20px;
 }
 #contents_box .product_category {
   width: 300px;
-  font-size: 20px;
   border: solid;
   border-color: #84c5f1;
   border-radius: 5px;
+  font-size: 20px;
 }
 #contents_box .product_price {
-  font-size: 20px;
+  height: 10px;
   width: 150px;
   border: solid;
   border-color: #84c5f1;
   border-radius: 5px;
+  font-size: 20px;
 }
 
 #contents_box .product_count {
-  font-size: 20px;
+  height: 10px;
   width: 150px;
   border: solid;
   border-color: #84c5f1;
   border-radius: 5px;
+  font-size: 20px;
 }
 
 .product_script .script_area {
-  margin-left: 30px;
   width: 90%;
   height: 100%;
   min-height: 300px;
+  margin-left: 30px;
+  border-radius: 10px;
+  font-size: 18px;
   vertical-align: top;
   line-height: 1.5;
-  border-radius: 10px;
   resize: none;
-  font-size: 18px;
 }
 
 #contents_box .product_add {
   display: block;
   float: right;
-  margin-right: 120px;
-  background-color: #84c5f1;
-  color: white;
   width: 200px;
   height: 45px;
+  margin-right: 120px;
+  border-radius: 10px;
   border: solid;
+  background-color: #84c5f1;
+  color: white;
   font-weight: bold;
   font-size: 22px;
-  border-radius: 10px;
 }
 
 #contents_box .select_image {
@@ -185,11 +188,11 @@
 
 #contents_box .product_update {
   display: inline-block;
-  background-color: white;
   width: 100%;
   height: 100%;
-  border-radius: 10px;
   min-height: 900px;
+  background-color: white;
+  border-radius: 10px;
 }
 #contents_box .product_row {
   position: relative;
@@ -203,53 +206,51 @@
 }
 
 .product_list_name {
-  font-size: 18px;
-  font-weight: bold;
+  padding-left: 30px;
   border-left: none;
   border-right: none;
   border-top: none;
   border-bottom: none;
+  font-size: 18px;
+  font-weight: bold;
   line-height: 4;
-  padding-left: 30px;
 }
 
 .product_list_category {
+  padding-left: 30px;
   border-left: none;
   border-right: none;
   border-top: none;
   border-bottom: none;
-  padding-left: 30px;
   font-size: 14px;
-  padding-left: 30px;
 }
 
 .product_list_row .product_list_data {
+  padding-left: 30px;
   border-left: none;
   border-right: none;
   border-top: none;
   border-bottom: 1 silver;
-  padding-left: 30px;
   font-size: 14px;
-  padding-left: 30px;
 }
 
 .product_row .product_image {
-  text-align: center;
-  vertical-align: middle;
   border-left: none;
   border-right: none;
   border-top: none;
   border-bottom: 1 silver;
+  text-align: center;
+  vertical-align: middle;
 }
 
 .product_row .product_CD button {
   width: 130px;
-  margin: 7px;
   height: 30px;
+  margin: 7px;
   border-radius: 5px;
+  background-color: white;
   font-size: 16px;
   font-weight: bold;
-  background-color: white;
 }
 .product_row .product_CD li {
   vertical-align: middle;
@@ -266,15 +267,15 @@
 }
 
 #contents_box .btn_add_product {
+  width: 130px;
+  height: 35px;
   float: right;
   margin-right: 270px;
   margin-top: 30px;
-  width: 130px;
-  height: 35px;
+  background-color: #84c5f1;
+  border: none;
   border-radius: 6px;
   font-size: 16px;
   font-weight: bold;
-  background-color: #84c5f1;
   color: white;
-  border: none;
 }
